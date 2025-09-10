@@ -1,5 +1,5 @@
 /*
- * clang++ -L/usr/local/lib -licuuc -licui18n -linflection -std=c++17 grammar_features.cc -o grammar_features
+ * clang++ -L/usr/local/lib -licuuc -licui18n -linflection -std=c++20 grammar_features.cc -o grammar_features
  * LD_LIBRARY_PATH=/usr/local/lib ./grammar_features
  *
  * Assuming that both inflection and icu4c are installed in /usr/local/lib
