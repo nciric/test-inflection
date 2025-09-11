@@ -25,7 +25,7 @@ int main(const int argc, const char* const argv[])
     ULocale serbian("sr");
     const auto conceptFactory = LocalizedCommonConceptFactoryProvider::getDefaultCommonConceptFactoryProvider()->getCommonConceptFactory(serbian);
 
-    InflectableStringConcept message(conceptFactory->getSemanticFeatureModel(), SpeakableString(u"девојка"));
+    InflectableStringConcept message(conceptFactory->getSemanticFeatureModel(), SpeakableString(u"боја"));
     NumberConcept one(static_cast<int64_t>(1), serbian, serbian);
     unique_ptr<SpeakableString> result(conceptFactory->quantify(one, &message));
     if (result != nullptr) {
